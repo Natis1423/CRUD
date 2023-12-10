@@ -1,0 +1,79 @@
+/* App.css */
+.admin-container {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+  }
+  
+  .admin-title {
+    font-size: 24px;
+  }
+  
+  .logout-button {
+    background-color: #f44336; /* Color rojo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .search-input {
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .edit-button, .delete-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .edit-button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+  }
+  
+  .delete-button {
+    background-color: #f44336; /* Rojo */
+    color: white;
+  }
+  
+  /* Agrega más estilos aquí según sea necesario */
+  
+  
+  /* Agrega más estilos aquí para personalizar tu interfaz */
+  
+  
+ 
+  

@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.container{
+   background-image: url("../images/m1.jpg");
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-bottom: 8%;
+   text-align: center;
+
+}
+
+.img {
+    width: 100%;
+    height: 550px;
+    z-index: -1;
+   
+
+}
+
+.header {
+    padding: 4% 10% 0 50%;
+    color: white;
+    
+}
+
+.titu1{
+    font-size: 120px;
+    text-align: right;
+   
+   
+}
+
+
+.descrip {
+    font-size: 20px;
+    padding-left: 20%;
+   
+}
+
+.boton {
+    background-color: #9995ca;
+    color: white;
+    width: 160px;
+    height: 50px;
+    font-size: 15px;
+    display: flex;
+    margin-top: 2%;
+    padding: 3% 2% 0 4%;
+    margin-left: 50%;
+    
+}
+
+.boton:hover {
+    background-color: #865788
+}

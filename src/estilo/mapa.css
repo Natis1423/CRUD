@@ -1,0 +1,23 @@
+.titu {
+    color: blueviolet;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 10px 10px 25px 35px navy;
+}
+
+.image {
+    border-radius: 35px;
+    width: 450px;
+    height: 450px;
+    margin-left: 30%;
+    background: rgb(200, 0, 255);
+    padding: 5px;
+    transition: 0.4s;
+}
+
+.image:hover {
+    width: 550px;
+    height: 550px;
+    margin-left: 27%;
+    display: none;
+} 
