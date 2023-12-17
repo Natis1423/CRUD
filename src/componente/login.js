@@ -2,6 +2,7 @@ import React from 'react';
 import './estilos/login.css'
 import { Crea } from './api/rutas';
 import { Formik, Form } from 'formik';
+import { Link } from 'react-router-dom';
 
 
 function Login() {
@@ -31,13 +32,14 @@ function Login() {
 <div className='login'>
     
       <h1 className='titulo'> INICIAR SESION</h1>
-      <input type="text" placeholder="Correo" name="correo" onChange={handleChange} value={values.correo}/>
-      <input type="password" placeholder="Contraseña" name="contraseña" onChange={handleChange}  value={values.contraseña} />
-      <input type="text" placeholder="rol" name='rol' onChange={handleChange}  value={values.rol}/>
-      <button type="submit" disabled={isSubmitting}>
-           {isSubmitting ? "Enviando...": "Iniciar sesion"} 
-</button>
-   
+      <input className='input1' type="text" placeholder="NUMERO DE DOCUMENTO" name="correo" onChange={handleChange} value={values.correo}/>
+      <input  className='input1' type="password" placeholder="CORREO" name="contraseña" onChange={handleChange}  value={values.contraseña} />
+     <Link to="/tareas"> <button className='boton4' type="submit" disabled={isSubmitting}>
+           {isSubmitting ? "Enviando...": "Iniciar sesion Admin"} 
+</button></Link> 
+<Link to="/muj"><button className='boton4' type="submit" disabled={isSubmitting}>
+           {isSubmitting ? "Enviando...": "Iniciar sesion Mujer"} 
+</button></Link> 
   
     </div>
     </Form>

@@ -1,0 +1,135 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+  }
+  
+  .admin {
+    background-color: rgb(1, 56, 1);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 90%;
+    margin-top: 2%;
+  
+  }
+  
+  .admin-text {
+    font-size: 32px;
+  margin-top: -3%;
+  margin-right: 70%;
+  
+  }
+  .button {
+    background-color: rgb(1, 56, 1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 80%;
+    margin-top: -5%;
+  }
+  .title{
+    font-size: 30px;
+    padding-bottom: 2%;
+    margin-left: 20%;
+    margin-top: -20%;
+  }
+  
+  .icono {
+    margin: 0 20px;
+    font-size: 50px;
+    margin-top: -5%;
+  }
+  
+  .button {
+    background-color: rgb(1, 56, 1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  .XD {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 336px); 
+  }
+  
+  .table {
+      width: 98%;
+      border-collapse: collapse;
+      margin-left: 15%;
+   
+  }
+  
+  th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: left;
+  }
+  
+  thead {
+      background-color: gray;
+      color: white;
+  }
+  
+  .AM {
+      margin-top: 20px;
+      padding: 10px 10px;
+      background-color: gray;
+      color: white;
+      border: none;
+      cursor: pointer;
+   
+  
+  }
+  
+  
+  
+  .section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10%;
+  padding-top: 5%;
+  height: calc(100vh - 60px);  
+  }
+  
+  .section {
+  width: 90%;  
+  border-collapse: collapse;
+  }
+  
+  
+  
+  
+  .AS {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: gray;
+  color: white;
+  border: none;
+  cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  .AE {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: gray;
+  color: white;
+  border: none;
+  cursor: pointer;
+  }
+  

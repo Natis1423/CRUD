@@ -6,7 +6,7 @@
     font: inherit;
     vertical-align: baseline;
 }
-.container{
+.container_header{
    background-image: url("../images/m1.jpg");
    width: 100%;
    background-repeat: no-repeat;
@@ -18,29 +18,24 @@
 
 .img {
     width: 100%;
-    height: 550px;
+    height: 950px;
     z-index: -1;
    
 
 }
-
-.header {
-    padding: 4% 10% 0 50%;
-    color: white;
-    
-}
-
 .titu1{
     font-size: 120px;
     text-align: right;
-   
-   
+        padding: 4% 10% 0 50%;
+        color: white;  
 }
 
 
 .descrip {
     font-size: 20px;
     padding-left: 20%;
+    padding: 4% 10% 0 50%;
+    color: white;
    
 }
 
@@ -51,10 +46,28 @@
     height: 50px;
     font-size: 15px;
     display: flex;
-    margin-top: 2%;
-    padding: 3% 2% 0 4%;
+    position: relative;
     margin-left: 50%;
-    
+    color: white;
+
+}
+.boton8{
+    background-color: #9995ca;
+    color: white;
+    width: 160px;
+    height: 50px;
+    font-size: 15px;
+    display: flex;
+    position: relative;
+    margin-left: 70%;
+    color: white;
+align-items: center;
+margin-top: 5%;
+padding:2% ;
+}
+
+.boton8:hover {
+    background-color: #865788
 }
 
 .boton:hover {

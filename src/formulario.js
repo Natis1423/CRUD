@@ -4,83 +4,87 @@ import React from 'react';
 import './componente/estilos/formulario.css'
 
 function Formulario() {
-  const {createTarea}=useTare()
+  const {createmujer}=useTare()
   return (
     <div>
     <Formik
        initialValues={{
-        tipo_doc:"",
-        doc:"",
-        primer_nom:"",
-        segundo_nom:"",
-        primer_ape:"",
-        segundo_ape:"",
-        tel:"",
-        correo_elec:"",
-        ciudad:"",
-        direccion:"",
-        ocupacion:"",
-        serv_participa:""
+        Tipo_Documen:"",
+        Documento:"",
+        Primer_Nom:"",
+        Segundo_Nom:"",
+        Primer_Ape:"",
+        Segundo_Ape:"",
+        Tel:"",
+        Correo_Elec:"",
+        Ciudad:"",
+        Direccion:"",
+        Ocupacion:"",
+        Serv_Participa:""
        }}
        onSubmit={async (values,actions)=>{
         console.log(values)
-        createTarea(values)
+        createmujer(values)
         actions.resetForm()
        }}
 
        >
        {({handleChange,handleSubmit,values, isSubmitting})=>(
-    <Form onSubmit={handleSubmit}>
+    <Form className="form" onSubmit={handleSubmit}>
+      
+        
+      <h1 className='titulo'> REGISTRARME</h1>
       <label>
-        Tipo de Documento:
-        <input type="text" name="tipo_doc" onChange={handleChange} value={values.tipo_doc}/>
-        </label>
+      Tipo de documento:  </label>
+        <input className="input" type="text" name="Tipo_Documen" onChange={handleChange} value={values.Documento}/>
+  
+      
      
         <label>
-        Numero de Documento:
-        <input type="text" name="doc" onChange={handleChange} value={values.doc}/>
-      </label>
+        Numero de Documento:  </label>
+        <input className="input" type="number" name="Documento" onChange={handleChange} value={values.Documento}/>
       <label>
-        Primer nombre:
-        <input type="text" name="primer_nom" onChange={handleChange} value={values.primer_nom}/>
-      </label>
+
+        Primer nombre:  </label>
+        <input className="input" type="text" name="Primer_Nom" onChange={handleChange} value={values.Primer_Nom}/>
+
       <label>
-        Segundo nombre:
-        <input type="text" name="segundo_nom" onChange={handleChange} value={values.segundo_nom}/>
-      </label>
+        Segundo nombre:  </label>
+        <input className="input" name="Segundo_Nom" onChange={handleChange} value={values.Segundo_Nom}/>
+   
       <label>
-        Primer apellido:
-        <input type="text" name="primer_ape" onChange={handleChange} value={values.primer_ape}/>
-      </label>
+        Primer apellido:  </label>
+        <input className="input"  type="text" name="Primer_Ape" onChange={handleChange} value={values.Primer_Ape}/>
+   
       <label>
-        Segundo apellido:
-        <input type="text" name="segundo_ape" onChange={handleChange} value={values.segundo_ape}/>
-      </label>
+        Segundo apellido:  </label>
+        <input className="input"  type="text" name="Segundo_Ape" onChange={handleChange} value={values.Segundo_Ape}/>
+    
       <label>
-        Teléfono:
-        <input type="text" name="tel" onChange={handleChange} value={values.tel}/>
-      </label>
+        Teléfono:  </label>
+        <input className="input" type="text" name="Tel" onChange={handleChange} value={values.Tel}/>
+     
       <label>
-        Correo Electrónico:
-        <input type="email" name="correo_elec" onChange={handleChange}value={values.correo_elec}/>
-      </label>
+        Correo Electrónico:  </label>
+        <input className="input"  type="email" name="Correo_Elec" onChange={handleChange}value={values.Correo_Elec}/>
+    
       <label>
-        Ciudad:
-        <input type="text" name="ciudad" onChange={handleChange}value={values.ciudad} />
-      </label>
+        Ciudad:  </label>
+        <input  className="input" type="text" name="Ciudad" onChange={handleChange}value={values.Ciudad} />
+    
       <label>
-        Dirección:
-        <input type="text" name="direccion" onChange={handleChange}value={values.direccion} />
-      </label>
+        Dirección:</label>
+        <input className="input" type="text" name="Direccion" onChange={handleChange}value={values.Direccion} />
+      
       <label>
-        Ocupación:
-        <input type="text" name="ocupacion" onChange={handleChange} value={values.ocupacion}/>
-      </label>
+        Ocupación:</label>
+        <input  className="input" type="text" name="Ocupacion" onChange={handleChange} value={values.Ocupacion}/>
+      
       <label>
-        Servicio en el que participa:
-        <input type="text"  name="serv_participa" onChange={handleChange} value={values.serv_participa}/>
-      </label>
-      <button type="submit" disabled={isSubmitting}>
+        Servicio en el que participa: </label>
+        <input className="input"  type="text"  name="Serv_Participa" onChange={handleChange} value={values.Serv_Participa}/>
+     
+      <button className="boton3" type="submit" disabled={isSubmitting}>
            {isSubmitting ? "Enviando...": "Enviar"} 
            </button>
    
